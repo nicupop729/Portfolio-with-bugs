@@ -2,22 +2,22 @@ const getMyElement = (param) => document.querySelector(param);
 
 const createMyElement = (param) => document.createElement(param);
 
-const form = getMyElement("form");
-const emailInput = getMyElement("#email-input");
-const nameInput = getMyElement("#name-input");
-const invalidH3 = getMyElement(".invalid-email");
-const menuDiv = createMyElement("div");
-menuDiv.className = "toggle-nav";
-const menuUl = createMyElement("ul");
-const menuPortfolio = createMyElement("li");
-menuPortfolio.textContent = "Portfolio";
-const menuAbout = createMyElement("li");
-menuAbout.textContent = "About";
-const menuContact = createMyElement("li");
-menuContact.textContent = "Contact";
-const closeIcon = createMyElement("span");
-closeIcon.textContent = "X";
-closeIcon.id = "closeIcon-id";
+const form = getMyElement('form');
+const emailInput = getMyElement('#email-input');
+const nameInput = getMyElement('#name-input');
+const invalidH3 = getMyElement('.invalid-email');
+const menuDiv = createMyElement('div');
+menuDiv.className = 'toggle-nav';
+const menuUl = createMyElement('ul');
+const menuPortfolio = createMyElement('li');
+menuPortfolio.textContent = 'Portfolio';
+const menuAbout = createMyElement('li');
+menuAbout.textContent = 'About';
+const menuContact = createMyElement('li');
+menuContact.textContent = 'Contact';
+const closeIcon = createMyElement('span');
+closeIcon.textContent = 'X';
+closeIcon.id = 'closeIcon-id';
 
 menuUl.appendChild(menuPortfolio);
 menuUl.appendChild(menuAbout);
@@ -26,129 +26,129 @@ menuUl.appendChild(menuContact);
 menuDiv.appendChild(closeIcon);
 menuDiv.appendChild(menuUl);
 
-const humbergerButton = getMyElement(".menu-icon");
+const humbergerButton = getMyElement('.menu-icon');
 
-menuPortfolio.addEventListener("click", () => {
-  menuDiv.style.display = "none";
-  document.location = "#portfolio";
+menuPortfolio.addEventListener('click', () => {
+  menuDiv.style.display = 'none';
+  document.location = '#portfolio';
 });
 
-menuAbout.addEventListener("click", () => {
-  menuDiv.style.display = "none";
-  document.location = "#about";
+menuAbout.addEventListener('click', () => {
+  menuDiv.style.display = 'none';
+  document.location = '#about';
 });
 
-menuContact.addEventListener("click", () => {
-  menuDiv.style.display = "none";
-  document.location = "#contact";
+menuContact.addEventListener('click', () => {
+  menuDiv.style.display = 'none';
+  document.location = '#contact';
 });
 
-closeIcon.addEventListener("click", () => {
-  menuDiv.style.display = "none";
+closeIcon.addEventListener('click', () => {
+  menuDiv.style.display = 'none';
 });
 
-humbergerButton.addEventListener("click", () => {
+humbergerButton.addEventListener('click', () => {
   document.body.appendChild(menuDiv);
-  menuDiv.style.backgroundColor = "#fff";
-  menuDiv.style.display = "block";
+  menuDiv.style.backgroundColor = '#fff';
+  menuDiv.style.display = 'block';
 });
 
 const projects = [
   {
-    name: "Keeping track of hundreds of components",
+    name: 'Keeping track of hundreds of components',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    projectImg: "./src/resources/Snapshoot-Portfolio.png",
+    projectImg: './src/resources/Snapshoot-Portfolio.png',
     techologies: [
-      "Codekit",
-      "GitHub",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    liveVersion: "https://nicupop729.github.io/Web_Developer_Portfolio/",
-    gitHubRepo: "https://github.com/nicupop729/Web_Developer_Portfolio",
+    liveVersion: 'https://nicupop729.github.io/Web_Developer_Portfolio/',
+    gitHubRepo: 'https://github.com/nicupop729/Web_Developer_Portfolio',
   },
   {
-    name: "Multi-Post Stories",
+    name: 'Multi-Post Stories',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    projectImg: "./src/resources/Snapshoot-Portfolio.png",
+    projectImg: './src/resources/Snapshoot-Portfolio.png',
     techologies: [
-      "Codekit",
-      "GitHub",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    liveVersion: "https://nicupop729.github.io/Web_Developer_Portfolio/",
-    gitHubRepo: "https://github.com/nicupop729/Web_Developer_Portfolio",
+    liveVersion: 'https://nicupop729.github.io/Web_Developer_Portfolio/',
+    gitHubRepo: 'https://github.com/nicupop729/Web_Developer_Portfolio',
   },
   {
-    name: "Gain+Glory",
+    name: 'Gain+Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    projectImg: "./src/resources/Snapshoot-Portfolio.png",
+    projectImg: './src/resources/Snapshoot-Portfolio.png',
     techologies: [
-      "Codekit",
-      "GitHub",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    liveVersion: "https://nicupop729.github.io/Web_Developer_Portfolio/",
-    gitHubRepo: "https://github.com/nicupop729/Web_Developer_Portfolio",
+    liveVersion: 'https://nicupop729.github.io/Web_Developer_Portfolio/',
+    gitHubRepo: 'https://github.com/nicupop729/Web_Developer_Portfolio',
   },
   {
-    name: "Hundreds of components",
+    name: 'Hundreds of components',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    projectImg: "./src/resources/Snapshoot-Portfolio.png",
+    projectImg: './src/resources/Snapshoot-Portfolio.png',
     techologies: [
-      "Codekit",
-      "GitHub",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    liveVersion: "https://nicupop729.github.io/Web_Developer_Portfolio/",
-    gitHubRepo: "https://github.com/nicupop729/Web_Developer_Portfolio",
+    liveVersion: 'https://nicupop729.github.io/Web_Developer_Portfolio/',
+    gitHubRepo: 'https://github.com/nicupop729/Web_Developer_Portfolio',
   },
   {
-    name: "Multi-Post",
+    name: 'Multi-Post',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    projectImg: "./src/resources/Snapshoot-Portfolio.png",
+    projectImg: './src/resources/Snapshoot-Portfolio.png',
     techologies: [
-      "Codekit",
-      "GitHub",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    liveVersion: "https://nicupop729.github.io/Web_Developer_Portfolio/",
-    gitHubRepo: "https://github.com/nicupop729/Web_Developer_Portfolio",
+    liveVersion: 'https://nicupop729.github.io/Web_Developer_Portfolio/',
+    gitHubRepo: 'https://github.com/nicupop729/Web_Developer_Portfolio',
   },
   {
-    name: "Glory",
+    name: 'Glory',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    projectImg: "./src/resources/Snapshoot-Portfolio.png",
+    projectImg: './src/resources/Snapshoot-Portfolio.png',
     techologies: [
-      "Codekit",
-      "GitHub",
-      "JavaScript",
-      "Bootstrap",
-      "Terminal",
-      "Codepen",
+      'Codekit',
+      'GitHub',
+      'JavaScript',
+      'Bootstrap',
+      'Terminal',
+      'Codepen',
     ],
-    liveVersion: "https://nicupop729.github.io/Web_Developer_Portfolio/",
-    gitHubRepo: "https://github.com/nicupop729/Web_Developer_Portfolio",
+    liveVersion: 'https://nicupop729.github.io/Web_Developer_Portfolio/',
+    gitHubRepo: 'https://github.com/nicupop729/Web_Developer_Portfolio',
   },
 ];
 
@@ -160,7 +160,7 @@ function User(name, email) {
 }
 
 function saveDataToLs() {
-  localStorage.setItem("userData", JSON.stringify(userData));
+  localStorage.setItem('userData', JSON.stringify(userData));
 }
 
 function getDataFromForm() {
@@ -170,7 +170,7 @@ function getDataFromForm() {
 }
 
 function getDataFromLocalSt() {
-  const dataFromLocal = JSON.pars(localStorage.getItem("userData"));
+  const dataFromLocal = JSON.pars(localStorage.getItem('userData'));
   if (dataFromLocal) {
     dataFromLocal.forEach((data) => {
       nameInput.value = data.name;
@@ -179,34 +179,34 @@ function getDataFromLocalSt() {
   }
 }
 
-form.addEventListener("submit", getDataFromForm);
+form.addEventListener('submit', getDataFromForm);
 
 function loadProject() {
   projects.forEach((project) => {
-    const projectLi = createMyElement("li");
-    projectLi.className = "project";
-    const imageDiv = createMyElement("div");
-    imageDiv.classList.add("project-img");
+    const projectLi = createMyElement('li');
+    projectLi.className = 'project';
+    const imageDiv = createMyElement('div');
+    imageDiv.classList.add('project-img');
 
     projectLi.appendChild(imageDiv);
-    const projectImage = createMyElement("img");
-    projectImage.className = "img";
+    const projectImage = createMyElement('img');
+    projectImage.className = 'img';
     projectImage.src = project.projectImg;
     imageDiv.appendChild(projectImage);
-    const projectH3 = createMyElement("h3");
+    const projectH3 = createMyElement('h3');
     projectH3.textContent = project.name;
-    projectH3.className = "project-title";
-    const innerUl = createMyElement("ul");
-    innerUl.className = "project-langs";
+    projectH3.className = 'project-title';
+    const innerUl = createMyElement('ul');
+    innerUl.className = 'project-langs';
 
-    const projectBtn = createMyElement("a");
-    projectBtn.className = "button";
-    projectBtn.href = "#";
-    projectBtn.textContent = "See Project";
+    const projectBtn = createMyElement('a');
+    projectBtn.className = 'button';
+    projectBtn.href = '#';
+    projectBtn.textContent = 'See Project';
 
     for (let i = 0; i < project.techologies.length - 2; i += 1) {
-      const innerLi = createMyElement("li");
-      innerLi.className = "project-lang";
+      const innerLi = createMyElement('li');
+      innerLi.className = 'project-lang';
       innerLi.textContent = project.techologies[i];
       innerUl.appendChild(innerLi);
     }
@@ -215,48 +215,48 @@ function loadProject() {
     projectLi.appendChild(innerUl);
     projectLi.appendChild(projectBtn);
 
-    projectBtn.addEventListener("click", () => {
-      const popUpDiv = createMyElement("div");
-      popUpDiv.className = "pop-up-div";
-      const innerPopUpDiv = createMyElement("div");
-      innerPopUpDiv.className = "inner-pop-up-div";
-      const popUpImgDiv = createMyElement("div");
-      popUpImgDiv.className = "pop-up-img-div";
-      const popUpImg = createMyElement("img");
-      popUpImg.className = "pop-up-img";
+    projectBtn.addEventListener('click', () => {
+      const popUpDiv = createMyElement('div');
+      popUpDiv.className = 'pop-up-div';
+      const innerPopUpDiv = createMyElement('div');
+      innerPopUpDiv.className = 'inner-pop-up-div';
+      const popUpImgDiv = createMyElement('div');
+      popUpImgDiv.className = 'pop-up-img-div';
+      const popUpImg = createMyElement('img');
+      popUpImg.className = 'pop-up-img';
       popUpImg.src = project.projectImg;
-      const popUpContDiv = createMyElement("div");
-      popUpContDiv.className = "cont-div";
-      const contTitle = createMyElement("h3");
-      contTitle.className = "cont-title";
+      const popUpContDiv = createMyElement('div');
+      popUpContDiv.className = 'cont-div';
+      const contTitle = createMyElement('h3');
+      contTitle.className = 'cont-title';
       contTitle.textContent = project.name;
-      const techListDiv = createMyElement("div");
-      techListDiv.className = "tech-list-div";
-      const techUl = createMyElement("ul");
-      techUl.className = "project-langs pop-up-mobile-langs";
-      const btnDiv = createMyElement("div");
-      btnDiv.className = "btn-div";
-      const popUpBtn = createMyElement("a");
-      popUpBtn.className = "button popUpBtn";
-      popUpBtn.textContent = "See live";
+      const techListDiv = createMyElement('div');
+      techListDiv.className = 'tech-list-div';
+      const techUl = createMyElement('ul');
+      techUl.className = 'project-langs pop-up-mobile-langs';
+      const btnDiv = createMyElement('div');
+      btnDiv.className = 'btn-div';
+      const popUpBtn = createMyElement('a');
+      popUpBtn.className = 'button popUpBtn';
+      popUpBtn.textContent = 'See live';
       popUpBtn.href = project.liveVersion;
 
-      const popUpRepoBtn = createMyElement("a");
-      popUpRepoBtn.className = "button popUpBtn";
-      popUpRepoBtn.textContent = "See source";
+      const popUpRepoBtn = createMyElement('a');
+      popUpRepoBtn.className = 'button popUpBtn';
+      popUpRepoBtn.textContent = 'See source';
       popUpRepoBtn.href = project.gitHubRepo;
 
-      const popUpDesc = createMyElement("p");
-      popUpDesc.className = "pop-up-desc";
+      const popUpDesc = createMyElement('p');
+      popUpDesc.className = 'pop-up-desc';
       popUpDesc.textContent = project.description;
-      const closePopUp = createMyElement("span");
-      closePopUp.className = "close-pop-up";
-      closePopUp.textContent = "x";
-      popUpDiv.style.display = "block";
+      const closePopUp = createMyElement('span');
+      closePopUp.className = 'close-pop-up';
+      closePopUp.textContent = 'x';
+      popUpDiv.style.display = 'block';
 
       for (let i = 0; i < project.techologies.length; i += 1) {
-        const innerLi = createMyElement("li");
-        innerLi.className = "project-lang pop-up-tech-langs";
+        const innerLi = createMyElement('li');
+        innerLi.className = 'project-lang pop-up-tech-langs';
         innerLi.textContent = project.techologies[i];
         techUl.appendChild(innerLi);
       }
@@ -275,23 +275,23 @@ function loadProject() {
       popUpDiv.appendChild(innerPopUpDiv);
       document.body.appendChild(popUpDiv);
 
-      closePopUp.addEventListener("click", () => {
-        popUpDiv.style.display = "none";
+      closePopUp.addEventListener('click', () => {
+        popUpDiv.style.display = 'none';
       });
     });
 
-    const projectUl = getMyElement(".projects");
+    const projectUl = getMyElement('.projects');
     projectUl.appendChild(projectLi);
   });
   getDataFromLocalSt();
 }
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const capitalLetters = [];
 
-  const emailCheck = emailInput.value.split("");
+  const emailCheck = emailInput.value.split('');
   for (let i = 0; i < emailCheck.length; i += 1) {
     if (!/[a-z]/.test(emailCheck[i]) && /[A-Z]/.test(emailCheck[i])) {
       capitalLetters.push(emailCheck[i]);
@@ -299,13 +299,13 @@ form.addEventListener("submit", (e) => {
   }
 
   function errorMessage() {
-    invalidH3.textContent = "Please enter your email in lower case";
-    invalidH3.style.color = "red";
-    emailInput.style.border = "thin solid red";
+    invalidH3.textContent = 'Please enter your email in lower case';
+    invalidH3.style.color = 'red';
+    emailInput.style.border = 'thin solid red';
   }
 
   function corectEmail() {
-    invalidH3.textContent = "";
+    invalidH3.textContent = '';
     form.submit();
   }
 
